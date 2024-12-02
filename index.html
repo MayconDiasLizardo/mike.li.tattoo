@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike Li Tattoo</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 2px solid #333;
+    }
+    header img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 50%; /* Deixa o logo redondo */
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #f0f0f0;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+
+    section h7 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      color: #353535;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+      font-size: 1em;
+      color: #ccc;
+    }
+    form input, form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #333;
+      border-radius: 8px;
+      background-color: #121212;
+      color: #fff;
+      font-size: 1em;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #444;
+    }
+    form button {
+      background-color: #333;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #1c1c1c;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Nova pasta/logo.png.jpg" alt="Mike Li Tattoo Logo">
+    <h2>Seja a Arte</h2>
+  </header>
+  <section>
+    <h2>Agende sua tatuagem</h2>
+    <h7>Formulário Simples</h7>
+    <form action="mailto:mikelitattoo@outlook.com" method="POST" enctype="text/plain">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+      <label for="instagram">Instagram:</label>
+      <input type="text" id="instagram" name="instagram" placeholder="Seu perfil no Instagram (@exemplo)" required>
+
+      <label for="description">Descrição da tatuagem:</label>
+      <textarea id="description" name="description" rows="5" placeholder="Explique sua ideia ou o que gostaria de tatuar..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>Contato: 910 776 288 | Email: <a href="mailto:mikelitattoo@outlook.com">mikelitattoo@outlook.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/mike.li.tattoo" target="_blank">@mike.li.tattoo</a></p>
+  </footer>
+</body>
+</html>
